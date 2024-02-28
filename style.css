@@ -203,11 +203,12 @@ div {
 .footer {
     background-color: #483EFF;
     display: flex;
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 60px;
+    align-items: center;
 }
 
 .footerBox {
@@ -256,9 +257,11 @@ div {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     width: 650px;
     padding-left: 50px;
+    height: 400px;
+    border-radius: 10px;
 }
 
 .info {
@@ -279,7 +282,10 @@ div {
     color: #04285A;
 }
 
-.name {
+.name,
+.email,
+.phone,
+.marks {
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -287,10 +293,72 @@ div {
     align-items: center;
 }
 
-.nameSpan {
+.nameSpan,
+.emailSpan,
+.phoneSpan,
+.marksSpan {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+.nextButton {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 12px;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-left: 450px;
+}
+
+.nextButton>p {
+    letter-spacing: 2px;
+}
+
+.nextButton>img {
+    width: 25px;
+    height: 15px;
+}
+
+.chatIcon>img {
+    width: 120px;
+    position: fixed;
+    bottom: 0;
+    left: 80%;
+}
+
+.socialDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    position: fixed;
+    margin-top: 80px;
+    left: 92%;
+}
+
+.socialDivWhatsapp>img,
+.socialDivFacebook>img,
+.socialDivTwitter>img {
+    width: 50px;
+}
+
+.socialDivWhatsapp,
+.socialDivFacebook,
+.socialDivTwitter {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.socialDivR {
+    display: none;
 }
 
 /* responsive */
@@ -353,5 +421,101 @@ div {
     .colorDiv {
         flex-direction: column;
         padding: 0;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .infoDiv {
+        width: 100%;
+        padding: 0;
+        /* padding-top: 20px; */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .details {
+        padding: 0;
+    }
+
+    .name,
+    .email,
+    .phone,
+    .marks {
+        font-size: 15px;
+        font-weight: 400;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nameSpan,
+    .emailSpan,
+    .phoneSpan,
+    .marksSpan {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+
+    .nextButton {
+        padding: 12px;
+        gap: 10px;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        width: 120px;
+        border-radius: 5px;
+    }
+
+    .nextButton>p {
+        letter-spacing: 2px;
+    }
+
+    .nextButton>img {
+        width: 25px;
+        height: 15px;
+    }
+
+    .socialDiv {
+        display: none;
+    }
+
+    .chatIcon>img {
+        width: 120px;
+        position: fixed;
+        bottom: 0;
+        left: 75%;
+    }
+
+    .socialDivR {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        margin-left: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .socialDivWhatsappR>img,
+    .socialDivFacebookR>img,
+    .socialDivTwitterR>img {
+        width: 25px;
+    }
+    
+    .socialDivWhatsappR,
+    .socialDivFacebookR,
+    .socialDivTwitterR {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
     }
 }
