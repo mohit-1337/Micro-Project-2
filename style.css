@@ -517,5 +517,6 @@ div {
         border: 2px solid black;
         padding: 5px;
         border-radius: 5px;
+        /* border: #000000; */
     }
 }
